@@ -96,22 +96,22 @@ body {
   animation: music 4s 2s infinite;
 }
 
-.paw .paw-left .down {
+.paw-left > .down {
   animation: updown 0.5s infinite;
 }
-.paw .paw-left .up {
+.paw-left > .up {
   animation: updown 0.5s 0.25s infinite;
 }
-.paw .paw-left .up .pads {
+.paw-left > .up > .pads {
   animation: updown 0.5s 0.25s infinite;
 }
-.paw .paw-rigth .down {
+.paw-rigth > .down {
   animation: updown 0.5s 0.25s infinite;
 }
-.paw .paw-rigth .up {
+.paw-rigth > .up {
   animation: updown 0.5s infinite;
 }
-.paw .paw-rigth .up .pads {
+.paw-rigth > .up > .pads {
   animation: updown 0.5s infinite;
 }
 
