@@ -23,7 +23,7 @@ body {
   width: 80vw;
   height: 80vh;
 
-  svg {
+  & svg {
     height: 500%;
     width: 100%;
     overflow: visible;
@@ -36,53 +36,53 @@ body {
   stroke-linejoin: round;
   stroke-width: 4;
 
-  .laptop-cover,
-  .headphone .band {
+  & .laptop-cover,
+  & .headphone > .band {
     fill: none;
   }
 
-  .paw,
-  .head {
+  & .paw,
+  & .head {
     stroke: var(--orange);
   }
 
-  .laptop-keyboard {
+  & .laptop-keyboard {
     stroke-width: 2;
   }
 
-  .terminal-code {
+  & .terminal-code {
     stroke-width: 5;
     stroke: var(--terminal-green);
   }
 
-  .laptop-base,
-  .laptop-cover {
+  & .laptop-base,
+  & .laptop-cover {
     stroke: var(--gray);
   }
 
-  .music .note,
-  .paw .pads {
+  &.music > .note,
+  & .paw > .pads {
     stroke: var(--pink);
   }
 
-  .table line,
-  .headphone .band,
-  .headphone .speaker path:nth-child(3) {
+  & .table > line,
+  & .headphone > .band,
+  & .headphone > .speaker > path:nth-child(3) {
     stroke: var(--green);
   }
 
-  .terminal-frame,
-  .laptop-keyboard,
-  .headphone .speaker path:nth-child(2) {
+  & .terminal-frame,
+  & .laptop-keyboard,
+  & .headphone > .speaker > path:nth-child(2) {
     stroke: var(--blue);
   }
 
-  .headphone .speaker path:first-child {
+  &.headphone > .speaker > path:first-child {
     stroke: var(--yellow);
   }
 }
 
-.music .note {
+&.music > .note {
   &:nth-child(1) {
     animation: music 4s infinite;
   }
@@ -97,32 +97,32 @@ body {
   }
 }
 
-.paw {
-  &.paw-left {
-    .down {
+& .paw {
+  & .paw-left {
+    & .down {
       animation: updown 0.5s infinite;
     }
-    .up {
+    & .up {
       animation: updown 0.5s 0.25s infinite;
-      .pads {
+      & .pads {
         animation: updown 0.5s 0.25s infinite;
       }
     }
   }
-  &.paw-rigth {
-    .down {
+  & .paw-rigth {
+    & .down {
       animation: updown 0.5s 0.25s infinite;
     }
-    .up {
+    & .up {
       animation: updown 0.5s infinite;
-      .pads {
+      & .pads {
         animation: updown 0.5s infinite;
       }
     }
   }
 }
 
-.terminal-code line {
+& .terminal-code > line {
   &:nth-child(1) {
     animation: typing 0.5s linear infinite;
   }
